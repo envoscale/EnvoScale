@@ -4,9 +4,11 @@ A code editor and IDE written in EnvoL, built on EnvoUI.
 
 <p align="center"><img src="https://raw.githubusercontent.com/envoscale/.github/main/profile/assets/envide.png" alt="EnvIDE with the EnvoLang repository in the sidebar and examples/02-shapes/main.envol open" width="100%"></p>
 
-Today: a sidebar with the folder's files, tabs, the editor with syntax colors, a status
-bar, and a command palette (Ctrl+Shift+P). Next: saving, then errors, completion and
-go-to-definition from `envo lsp`, then build, run, test and debug.
+Today: a menu bar, a sidebar with file icons, tabs, saving (with a dot for unsaved
+changes, a question before losing them, and backups that survive a closed window), Go to
+File, Go to Line, Find and Replace, zoom, a light and a dark theme, and a command palette
+(Ctrl+Shift+P). Next: completion and errors from `envo lsp`, panels and split editors, a
+terminal, then build, run and debug, and plugins.
 
 ```bash
 git clone https://github.com/envoscale/EnvIDE
