@@ -15,3 +15,5 @@ cd EnvIDE
 build/envide <folder> [file]         # open a folder, and a file in it
 build/envide . main.envol --screenshot shot.ppm   # draw one frame into an image
 ```
+
+What comes next: the [roadmap](roadmap.md).
