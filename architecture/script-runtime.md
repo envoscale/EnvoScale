@@ -1,4 +1,4 @@
-# The script runtime (M6)
+# The script runtime
 
 > **Status:** M6, done. Decisions D31–D36 in [`PLAN.md`](../project/plan.md).
 

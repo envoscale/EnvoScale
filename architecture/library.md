@@ -1,4 +1,4 @@
-# The standard platform: layers, ports and adapters (M4)
+# The standard library: layers, ports and adapters
 
 `lib/` is the standard platform, written in Envo-S1 and compiled by `envoc` (Stage 2).
 It reaches the outside world only through ports (`lib/ports`), which adapters

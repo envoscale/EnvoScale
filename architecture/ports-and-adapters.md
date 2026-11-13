@@ -1,4 +1,4 @@
-# Architecture: Ports and Adapters
+# Ports and adapters
 
 > **Status:** Design. Ports and the first adapters are implemented in M4.
 

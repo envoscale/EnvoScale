@@ -1,4 +1,4 @@
-# Tooling: `envo`, packages and the Process port (M5)
+# Tooling: `envo` and packages
 
 > **Status:** M5, in progress. Decisions D26–D30 in [`PLAN.md`](../project/plan.md).
 

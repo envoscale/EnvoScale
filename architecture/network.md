@@ -1,4 +1,4 @@
-# Network (M7)
+# Networking
 
 > **Status:** M7, done. Decisions D40–D42 in [`PLAN.md`](../project/plan.md).
 

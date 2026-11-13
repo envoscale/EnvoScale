@@ -1,4 +1,4 @@
-# Graphics and UI (M8)
+# Graphics and UI
 
 > **Status:** M8, in progress. Decisions D43–D47 in [`PLAN.md`](../project/plan.md).
 
