@@ -52,7 +52,7 @@ fallback). A program can override any choice explicitly at the full-control door
 
 `tests/conformance/<port>/` holds one suite per port. `envo port check <adapter>` runs it.
 An adapter is complete when its suite passes; that is the definition used by
-[`docs/porting/CHECKLIST.md`](../porting/CHECKLIST.md).
+[`porting/CHECKLIST.md`](../porting/CHECKLIST.md).
 
 ## Stage 0
 

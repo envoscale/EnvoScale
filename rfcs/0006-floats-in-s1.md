@@ -5,7 +5,7 @@
   script runtime and `comptime` (brief §3.7, §4.1), and the full language's rules
   (chapters 1–3) wherever a subset can follow them.
 - **Author(s):** founding engineer
-- **Affects:** language (`docs/spec/envo-s1.md`), Stage 2's front end and both backends,
+- **Affects:** language (`EnvoLang/spec/envo-s1.md`), Stage 2's front end and both backends,
   the script runtime, `core.text`
 - **Tracking:** PLAN §5 (M10 blocked; floats come first for M11 and M12)
 
@@ -20,9 +20,9 @@ stays without floats: like `tests/spec/s2-run`, float programs are Stage 2 progr
 
 Envo-S1 has no floats (`[s1.type.3]`). Everything that has worked around that so far has
 done so in integers:
-- `envo.gfx` and `envo.font` rasterize in fixed point;
+- `envor.gfx` and `envor.font` rasterize in fixed point;
 - the GPU adapter builds IEEE bit patterns by hand for Direct3D;
-- Lumen's tokens are whole pixels.
+- The theme's tokens are whole pixels.
 
 The next milestones cannot work around it. A PBR renderer (M11) and tensors with
 autograd (M12) are float code from end to end, and EIR has had float types and
@@ -91,7 +91,7 @@ and checked. They are opt-in by type, and the rules are the hardware's.
 
 ## Alternatives
 
-- **Fixed point everywhere.** It works for 2D rasterization, as `envo.gfx` shows. It does
+- **Fixed point everywhere.** It works for 2D rasterization, as `envor.gfx` shows. It does
   not work for physically based shading or gradient descent, whose ranges no single
   scale fits.
 - **Floats in Stage 1 too.** Stage 1 is the bootstrap compiler and needs none. Keeping it

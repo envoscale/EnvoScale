@@ -35,7 +35,7 @@ kernel; on Windows, only system DLLs.
 - **No license checks** at run time or build time.
 - **Scripts are sandboxed**: `envo run` gives a script its console and nothing else
   unless `--allow` grants files, the environment, processes or the network
-  (`docs/architecture/script-runtime.md`).
+  (`architecture/script-runtime.md`).
 - **The website sandbox** compiles and runs programs in the browser; nothing typed there
   leaves the machine (share links keep the program in the URL fragment, which browsers do
   not send to servers).
@@ -62,7 +62,7 @@ kernel; on Windows, only system DLLs.
 
 ## Accessibility
 
-Lumen, the design language of `envo.ui` and the website, meets WCAG 2.2 AA contrast in
+The EnvoR theme, which EnvoUI and the website are drawn with, meets WCAG 2.2 AA contrast in
 its light and dark schemes: 4.5:1 for every text color on every surface, 3:1 for control
-edges. `lib/envo/lumen/tests/contrast.envol` checks every pair on every change. Focus is
+edges. `EnvoR/theme/tests/contrast.envol` checks every pair on every change. Focus is
 always visible (a focus ring in the accent color).

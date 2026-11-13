@@ -8,12 +8,12 @@ are ports, and everything drawn is computed in memory first:
 | Layer | Module | State |
 |---|---|---|
 | Terminal port (D43) | `ports.ITerminal`, adapters in `os.*` | done (8.1) |
-| Terminal programs | `envo.term`: styles, keys, a diffing cell screen | done (8.1) |
+| Terminal programs | `envoui.term`: styles, keys, a diffing cell screen | done (8.1) |
 | Command-line programs | `envo.cli` | done (8.2) |
-| 2D drawing (D44) | `envo.gfx`: an RGBA canvas, in software | done (8.3) |
-| Text | `envo.font`: TrueType, anti-aliased | done (8.4) |
+| 2D drawing (D44) | `envor.gfx`: an RGBA canvas, in software | done (8.3) |
+| Text | `envor.font`: TrueType, anti-aliased | done (8.4) |
 | Window port (D45) | `ports.IWindow`, adapters in `os.*`: Win32, X11 (14.7), a page's canvas (14.8) | done (8.5, 14.7, 14.8) |
-| UI (D47) | `envo.ui` on `envo.lumen`; application components on `envo.edit` | done (8.6, 14.6) |
+| UI (D47) | `envoui` on `envor.theme`; application components on `envoui.edit` | done (8.6, 14.6) |
 | Input and clipboard (D73) | `ports.KEY_*`, `Event.Mods`, `ports.IClipboard`, `std.clipboard` | done (14.2) |
 | GPU port (D46) | `ports.IGpu`; software adapter in `envo.gpu`, Direct3D 12 in `os.windows` | done (8.7, 8.8) |
 
@@ -21,8 +21,8 @@ are ports, and everything drawn is computed in memory first:
 
 Envo-S1 has no floating point yet, so rasterization is integer and fixed point:
 
-- `envo.gfx` measures edge coverage on a 4 × 4 grid in each pixel.
-- `envo.font` flattens curves at 1/256 pixel and measures coverage exactly across each
+- `envor.gfx` measures edge coverage on a 4 × 4 grid in each pixel.
+- `envor.font` flattens curves at 1/256 pixel and measures coverage exactly across each
   pixel on four sub-rows.
 
 Every result is the same on every machine and in every build mode (`-O0`, `-O2`, the
@@ -132,7 +132,7 @@ which have no runtime compiler on the system.
 
 ## UI (D47)
 
-`envo.ui` keeps the interface as a tree in one list (each component knows its parent,
+`envoui` keeps the interface as a tree in one list (each component knows its parent,
 first child and next sibling). Envo-S1 cannot store closures, so components return what
 was activated instead of calling handlers.
 
@@ -141,14 +141,14 @@ the font in pixels, or by code points in cells. Arranging goes top down: a conta
 shares the space left over among the children that grow, then places them across by
 its alignment.
 
-Spacing is given as Lumen steps, so the same tree lays out in pixels or in cells; a
+Spacing is given as theme steps, so the same tree lays out in pixels or in cells; a
 terminal rounds the steps to cells. Both renderers draw the same roles: a card's
 rounded surface and edge become a box of lines, and the focus ring becomes reverse
 video.
 
 ## Fonts
 
-`envo.font` reads TrueType outlines from the system's fonts (`System("sans-serif")`).
+`envor.font` reads TrueType outlines from the system's fonts (`System("sans-serif")`).
 EnvoL bundles none. Font files are treated as untrusted input:
 - every read is checked;
 - composite glyphs nest at most 8 deep;

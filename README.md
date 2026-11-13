@@ -59,3 +59,7 @@ Everything about EnvoL and the projects built with it, in one place.
 | [Using EnvoL in an organization](guides/enterprise.md) | Platforms, installation at scale, security, compliance |
 | [Installing offline](guides/offline-install.md) | Checking a release, air-gapped installs, mirrors, SBOMs |
 | [Licensing](legal/licensing.md) | Who needs which license, trademarks, contributing |
+
+## License
+
+Same as EnvoLang: see [LICENSE](LICENSE).

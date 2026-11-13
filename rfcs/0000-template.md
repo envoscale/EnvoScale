@@ -15,7 +15,7 @@ Why this is needed. What breaks, hurts or is impossible today. Concrete examples
 
 ## Guide-level explanation (the simple door)
 
-Explain the feature the way it would appear in `docs/guides/`: to a user who has never
+Explain the feature the way it would appear in `guides/`: to a user who has never
 seen it, with examples, starting from the simplest use.
 
 ## Reference-level explanation (the full-control door)

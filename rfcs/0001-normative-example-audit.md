@@ -89,7 +89,7 @@ is the conditional operator. There is no `?.` token.
 
 ### C5. Missing semicolons in builder blocks and the gallery: resolved in the draft spec
 
-The Lumen level-2 example separates builder statements by line breaks, and the CLI
+The level-2 UI example separates builder statements by line breaks, and the CLI
 gallery entry has no trailing `;`. **Resolution adopted** in [stmt.term.*]: line
 breaks end complete statements; `;` is optional before `}` and at end of file.
 

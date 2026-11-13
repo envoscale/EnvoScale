@@ -3,7 +3,7 @@
 - **Status:** Accepted (2026-11-12)
 - **Author(s):** EnvoScale project
 - **Affects:** language (initializers), EON (no change)
-- **Tracking:** [#32](https://github.com/envoscale/EnvoLang/issues/32); closes the open question in `docs/spec/eon.md` section 4
+- **Tracking:** [#32](https://github.com/envoscale/EnvoLang/issues/32); closes the open question in `EnvoLang/spec/eon.md` section 4
 
 ## Summary
 
@@ -15,7 +15,7 @@ block written with the shorthand into EnvoL gets an error whose fix-it inserts t
 
 ## Motivation
 
-`docs/spec/eon.md` section 4 left open whether EnvoL initializers take the shorthand. It
+`EnvoLang/spec/eon.md` section 4 left open whether EnvoL initializers take the shorthand. It
 has to be settled before anonymous initializers (`Config c = { … };`) are implemented in
 Stage 2, because the shorthand changes what the parser must accept inside braces.
 
@@ -69,7 +69,7 @@ be pasted into EnvoL; the fix-it does it.
   would need lookahead to tell which, in a position where a forgotten `=` or `;` already
   produces confusing errors. The gain is one character.
 - **Remove the shorthand from EON.** Makes configuration files noisier, and the root
-  `envo.envon` and Lumen's token files already use it.
+  `envo.envon` and the theme's token files already use it.
 - **Do nothing.** Leaves the question open and blocks anonymous initializers.
 
 

@@ -26,7 +26,7 @@ function pointer. `move` before a lambda captures everything by move.
 Chapter 3 defines lambdas (`x => e`) and the brief's pipelines need them
 (`orders.Where(o => o.Paid)`), but no type can be written for one, so no function can
 take a lambda, no struct can store a callback, and Stage 1 cannot type-check closures
-(M2.9). `docs/PLAN.md` open question 4 and chapter 3's "`move` prefix: reserved word
+(M2.9). `project/plan.md` open question 4 and chapter 3's "`move` prefix: reserved word
 TBD" both wait on this RFC.
 
 The design has to serve both doors at once:

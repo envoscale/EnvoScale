@@ -11,7 +11,7 @@ under the **Website** epic on the [roadmap](https://github.com/orgs/envoscale/pr
 1. **Understand it in 60 seconds.** What EnvoScale is, the Hello World Gallery, and why
    one language for every layer matters (brief §1, §3.2).
 2. **Try it without installing.** The sandbox runs EnvoL in the browser.
-3. **Learn it.** The learning path from `docs/guides/` and the language specification.
+3. **Learn it.** The learning path from `guides/` and the language specification.
 4. **Buy it.** Enterprise pages: what the commercial license covers, editions and prices
    once set ([#36](https://github.com/envoscale/EnvoLang/issues/36)), support,
    security, and how to get an evaluation license.
@@ -37,10 +37,10 @@ under the **Website** epic on the [roadmap](https://github.com/orgs/envoscale/pr
 |---|---|---|
 | Home | Tagline, animated "one language, every layer" demo, Hello World Gallery, skill levels 0–4, call to action | README, brief §1, §3 |
 | Sandbox | Editor, example picker, Run, output | `tests/spec/hello`, run tests |
-| Learn | Learning path: first line → first app → first website → ownership → low level | `docs/guides/` |
-| Docs | Language spec, Envo-Core, EIR, EAS, EON, error index | `docs/spec/` |
+| Learn | Learning path: first line → first app → first website → ownership → low level | `guides/` |
+| Docs | Language spec, Envo-Core, EIR, EAS, EON, error index | `EnvoLang/spec/` |
 | Download | Releases, build from source, bootstrap chain | `bootstrap/README.md` |
-| Enterprise | License comparison, editions, support, LTS, security, evaluation request | `LICENSING.md`, `docs/legal/` |
+| Enterprise | License comparison, editions, support, LTS, security, evaluation request | `LICENSING.md`, `legal/` |
 | Roadmap | Milestones M0–M13 with status | `STATUS.md`, Project #3 |
 | Community | Discord, GitHub, contributing, code of conduct | `CONTRIBUTING.md` |
 

@@ -1,9 +1,9 @@
-# Lumen design language
+# The EnvoR theme
 
 > **Status:** Version 1 (M8.6). Tokens: [`theme/tokens.envon`](../../theme/tokens.envon);
-> code: `envo.lumen`; used by `envo.ui` as its default theme.
+> code: `envor.theme`; used by `envoui` as its default theme.
 
-Lumen is how EnvoL programs look by default: calm surfaces, one accent color, type on the
+The theme is how EnvoL programs look by default: calm surfaces, one accent color, type on the
 system's own fonts, and generous, regular spacing. A theme is a set of token values; a
 program can override any of them.
 
@@ -39,7 +39,7 @@ Each role has a light and a dark value (`tokens.envon`, blocks `light` and `dark
 
 ## Type
 
-On the system's sans-serif font (`envo.font.System`). Sizes in pixels, each with its line
+On the system's sans-serif font (`envor.font.System`). Sizes in pixels, each with its line
 height; in a terminal every style is one cell high, and titles are bold.
 
 | Style | Size | Line | Weight in a terminal |
