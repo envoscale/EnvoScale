@@ -1,7 +1,7 @@
 # Website plan
 
 The EnvoScale website explains the project in a minute, lets people try EnvoL, holds the
-documentation, and sells commercial licenses. **It is written in EnvoL**, with `envoweb`
+documentation, and offers support to organizations. **It is written in EnvoL**, with `envoweb`
 and the EnvoR templates, so it is built when that stack exists (M9), not before: the
 site is itself a demonstration that EnvoScale can build a website. Each phase is an issue
 under the **Website** epic on the [roadmap](https://github.com/orgs/envoscale/projects/3).
@@ -12,9 +12,8 @@ under the **Website** epic on the [roadmap](https://github.com/orgs/envoscale/pr
    one language for every layer matters (brief §1, §3.2).
 2. **Try it without installing.** The sandbox runs EnvoL in the browser.
 3. **Learn it.** The learning path from `guides/` and the language specification.
-4. **Buy it.** Enterprise pages: what the commercial license covers, editions and prices
-   once set ([#36](https://github.com/envoscale/EnvoLang/issues/36)), support,
-   security, and how to get an evaluation license.
+4. **Get support.** Pages for organizations: support plans and services, with prices
+   once set ([#36](https://github.com/envoscale/EnvoLang/issues/36)), and security.
 5. **Trust it.** Status, roadmap, reproducible builds, security policy.
 
 ## Rules

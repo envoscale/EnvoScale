@@ -62,4 +62,5 @@ Everything about EnvoL and the projects built with it, in one place.
 
 ## License
 
-Same as EnvoLang: see [LICENSE](LICENSE).
+The text is licensed under [CC BY 4.0](LICENSE): share and adapt it, with credit and a note of
+what you changed. Code samples are Apache-2.0, like EnvoL.

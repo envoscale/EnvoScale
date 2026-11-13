@@ -2,8 +2,8 @@
 
 > Plain-language summary: you keep the copyright to what you contribute, and you give the
 > EnvoScale copyright holder a broad license to it, including the right to offer it under
-> both the Community License and commercial licenses. Without this, EnvoScale could not be
-> dual-licensed. This agreement should be reviewed by a lawyer before it is relied on.
+> other licenses as well as Apache-2.0. This agreement should be reviewed by a lawyer
+> before it is relied on.
 
 "We" and "us" means the copyright holder of EnvoScale named in [`LICENSE`](https://github.com/envoscale/EnvoLang/blob/main/LICENSE).
 "You" means the person or legal entity submitting a Contribution. A "Contribution" is any

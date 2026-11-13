@@ -123,19 +123,12 @@ Items marked **RFC** conflict with the brief as written and are tracked in an RF
 
 1. ~~**RFC 0001**~~ **Accepted 2026-11-11** (C1 `Copy` bound, C2 `Trimmed()`). Original question: **RFC 0001: normative example audit.** Some §3.3 examples can't type-check under
    the brief's own rules: `Largest<T>` moves a non-`Copy` `T` out of a borrowed span
-   ("no hidden copies"), and `ReadConfig` returns `text.Trim()`: a borrow of a local
-  : as an owned `string`. See [`rfcs/0001-normative-example-audit.md`](../rfcs/0001-normative-example-audit.md).
-2. ~~**License.**~~ **Decided 2026-11-11 by the owner:** free for individuals and
-   noncommercial use (PolyForm Noncommercial 1.0.0), commercial licenses for companies,
-   contributions under a CLA. See `LICENSING.md`. On 2026-11-11 the owner asked for
-   something more official; PolyForm Noncommercial was kept, because it is a standard,
-   lawyer-drafted, SPDX-listed license and the better-known alternatives (BSL, FSL,
-   Elastic) all let companies use the software without paying. The package around it was
-   made formal instead: full license text in `LICENSES/`, SPDX expression, commercial
-   agreement and order form templates in `legal/`, and `TRADEMARKS.md`. The text
-   below is the original question.
-   `LICENSE` was MIT with "The EnvoScale contributors" as a placeholder
-   choice. The owner should confirm or replace it before the first public release.
+   ("no hidden copies"), and `ReadConfig` returns `text.Trim()`, a borrow of a local,
+   as an owned `string`. See [`rfcs/0001-normative-example-audit.md`](../rfcs/0001-normative-example-audit.md).
+2. ~~**License.**~~ **Decided 2026-11-13 by the owner:** Apache-2.0 for every repository
+   with code, CC BY 4.0 for the documentation, contributions under the CLA. (Until then
+   the project was under PolyForm Noncommercial 1.0.0 with commercial licenses.) See
+   [licensing](../legal/licensing.md).
 3. ~~**Explicit lifetime syntax.**~~ **Decided 2026-11-11 by [RFC 0004](../rfcs/0004-lifetimes-and-views.md):**
    borrow origins (`from a, b`), inferred for functions a library does not export, and `mut T[]` for
    writable views. Original question: the brief says explicit lifetimes "exist but are

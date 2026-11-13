@@ -193,8 +193,6 @@ as sub-issues, owner decisions marked **Needs Decision**.
 - **Source files are limited to 16 MiB** in Stages 0 and 1.
 - **Envo-Core can't make a non-empty slice.** Slicing ([RFC 0002](../rfcs/0002-slicing.md))
   is Envo-S1 and up, so Core code, including Stage 1, uses a pointer and a length.
-- **The legal documents haven't been reviewed by a lawyer.** `LICENSE` uses the PolyForm
-  Noncommercial License 1.0.0. The commercial templates in `legal/`, `CLA.md` and
-  `TRADEMARKS.md` are drafts, and the licensor is still a GitHub handle. Both need fixing
-  before the first commercial license is sold
-  ([#35](https://github.com/envoscale/EnvoLang/issues/35)).
+- **The legal documents haven't been reviewed by a lawyer.** The code is Apache-2.0 and
+  the documentation CC BY 4.0. The CLA and the trademark policy are drafts, and the
+  marks are not registered ([#35](https://github.com/envoscale/EnvoLang/issues/35)).

@@ -52,8 +52,8 @@ kernel; on Windows, only system DLLs.
 
 ## Licensing compliance
 
-- EnvoScale has no third-party code. Its license is
-  `PolyForm-Noncommercial-1.0.0 OR LicenseRef-EnvoScale-Commercial` (`LICENSING.md`).
+- EnvoScale has no third-party code. Its license is `Apache-2.0`
+  ([licensing](../legal/licensing.md)).
 - `envo build --sbom` writes an SPDX 2.3 bill of materials beside each program: the
   EnvoScale modules compiled in, with their license, and every dependency package with
   its version and SHA-256.
