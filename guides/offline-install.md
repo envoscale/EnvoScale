@@ -9,9 +9,9 @@ organization.
 
 | File | What it is |
 |---|---|
-| `envoscale-<version>.tar` | the toolchain: `bin/` (`envo` and `envoc` for Linux and Windows), `lib/`, `adapters/`, `docs/`, the licenses |
-| `envoscale-<version>.tar.sig` | the Ed25519 signature of the archive's SHA-256 |
-| `envoscale-<version>.provenance.json` | how the archive was built (see [Provenance](#provenance)) |
+| `envol-<version>.tar` | the toolchain: `bin/` (`envo` and `envoc` for Linux and Windows), `lib/`, `adapters/`, `spec/`, `LICENSE` and `NOTICE` |
+| `envol-<version>.tar.sig` | the Ed25519 signature of the archive's SHA-256 |
+| `envol-<version>.provenance.json` | how the archive was built (see [Provenance](#provenance)) |
 | `SHA256SUMS` | the archive's SHA-256 |
 
 The archive is reproducible: `build.sh dist` (or `build.ps1 dist`) on the same
@@ -26,10 +26,10 @@ On a machine you trust, with the release's public key (published with the releas
 
 ```bash
 sha256sum -c SHA256SUMS
-envo verify envoscale-<version>.tar --key <public key hex>
+envo verify envol-<version>.tar --key <public key hex>
 ```
 
-On Windows, `Get-FileHash -Algorithm SHA256 envoscale-<version>.tar` gives the digest to
+On Windows, `Get-FileHash -Algorithm SHA256 envol-<version>.tar` gives the digest to
 compare with `SHA256SUMS`. Without `envo` at hand, OpenSSL 3 checks the signature too:
 the signed message is the archive's SHA-256 written as 64 lowercase hex digits.
 
@@ -38,8 +38,8 @@ the signed message is the archive's SHA-256 written as 64 lowercase hex digits.
 Copy the three files to the machine by whatever means your policy allows, then:
 
 ```bash
-tar -xf envoscale-<version>.tar -C /opt
-export ENVO_HOME=/opt/envoscale-<version>
+tar -xf envol-<version>.tar -C /opt
+export ENVO_HOME=/opt/envol-<version>
 export PATH="$ENVO_HOME/bin:$PATH"
 envo version
 ```
@@ -47,8 +47,8 @@ envo version
 On Windows, `tar` ships with Windows 10 and later:
 
 ```powershell
-tar -xf envoscale-<version>.tar -C C:\Tools
-$env:ENVO_HOME = 'C:\Tools\envoscale-<version>'
+tar -xf envol-<version>.tar -C C:\Tools
+$env:ENVO_HOME = 'C:\Tools\envol-<version>'
 $env:PATH = "$env:ENVO_HOME\bin;$env:PATH"
 envo version
 ```
@@ -79,7 +79,7 @@ block, against your signing keys, wherever it came from.
 
 ## Provenance
 
-`dist` also writes `envoscale-<version>.provenance.json`, an
+`dist` also writes `envol-<version>.provenance.json`, an
 [in-toto](https://in-toto.io) statement in the SLSA provenance v1 format: the archive's
 SHA-256, the source commit, the command that built it, the build time it used
 (`SOURCE_DATE_EPOCH`), the CI run that built it (or `local`), and the SHA-256 of each
